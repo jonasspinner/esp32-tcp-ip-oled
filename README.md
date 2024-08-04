@@ -1,7 +1,15 @@
+# ESP32 OLED via TCP
 
+#### Enable USB
 
     sudo chmod a+rw /dev/ttyUSB0
 
 
+## ESP32
 
-    cargo +stable run --target x86_64-unknown-linux-gnu --bin client
+    env WIFI_SSID=... WIFI_PASS=... cargo run
+
+
+## Client
+
+    cd client && cargo run
